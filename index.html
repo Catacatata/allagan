@@ -4,21 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dRama</title>
+    <!-- 引入 Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>dRama</h1>
-        <img src="images/logo.png" alt="Logo">
+    <!-- 引入 Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <header class="bg-warning text-center py-3">
+        <img src="images/logo.png" alt="dRama Logo" class="img-fluid">
     </header>
-    <main>
-        <section id="about">
-            <h2>关于我们</h2>
-            <p>欢迎来到 dRama！我们热爱戏剧和表演艺术。</p>
+    
+    <main class="container my-4">
+        <section id="about" class="mb-4">
+            <h2 class="text-danger">关于我们</h2>
+            <p class="lead">欢迎来到 dRama！我们热爱戏剧和表演艺术。</p>
         </section>
+
+        <!-- 播放按钮 -->
+        <div class="text-center">
+            <button id="play-button" class="btn btn-danger btn-lg">
+                <i class="fas fa-play"></i> 播放
+            </button>
+        </div>
     </main>
-    <footer>
+    
+    <footer class="bg-warning text-center py-3">
         <p>&copy; 2024 dRama. 保留所有权利。</p>
     </footer>
+    
+    <!-- 引入 Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
