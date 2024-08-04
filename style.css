@@ -31,3 +31,16 @@ footer {
     border-top: 1px solid #dee2e6; /* 顶部边框 */
     text-align: center; /* 文本居中 */
 }
+
+/* 使用 @font-face 定义本地字体 */
+@font-face {
+    font-family: 'SmileySans';
+    src: url('fonts/SmileySans.woff2') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 应用自定义字体 */
+.custom-font {
+    font-family: 'SmileySans', sans-serif; /* 使用自定义字体 */
+}
