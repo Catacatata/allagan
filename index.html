@@ -6,7 +6,7 @@
     <title>dRama</title>
     <!-- 引入 Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">   
 </head>
 <body>
     <!-- 引入 Bootstrap JS -->
@@ -14,10 +14,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
-    <header class="bg-warning text-center py-3">
-        <img src="images/logo.png" alt="dRama Logo" class="img-fluid">
+    <header class="center">
+    <img src="images/logo.png" alt="dRama Logo" class="img-fluid">
     </header>
-    
+   
     <main class="container my-4">
         <section id="about" class="mb-4">
             <h2 class="text-danger">关于我们</h2>
@@ -26,14 +26,15 @@
 
         <!-- 播放按钮 -->
         <div class="text-center">
-            <button id="play-button" class="btn btn-danger btn-lg">
+            <button id="vptest" class="btn btn-danger btn-lg">
                 <i class="fas fa-play"></i> 播放
             </button>
         </div>
     </main>
     
-    <footer class="bg-warning text-center py-3">
-        <p>&copy; 2024 dRama. 保留所有权利。</p>
+    <footer class="text-center py-3">    
+		<p id="noharmed" class="text" style="cursor: pointer;">本语音包没有任何大妈受到伤害</p> 
+		<p>&copy; 2024 dRama. 保留所有权利。</p>
     </footer>
     
     <!-- 引入 Font Awesome -->
