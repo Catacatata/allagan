@@ -21,15 +21,17 @@ header img {
 
 /* 自定义页脚样式 */
 footer {
+    background-color: #53565A; /* 背景颜色 */
+    color: #F4F5F0; /* 文本颜色 */
+	font-size: 14px;
+    line-height: 0.8; /* 设置行间距 */
+    padding: 3px 0; /* 上下内边距 */
+    border-top: 1px solid #dee2e6; /* 顶部边框 */
+    text-align: center; /* 文本居中 */
     position: fixed; /* 固定位置 */
     bottom: 0; /* 距离视口底部 0 像素 */
     left: 0; /* 距离视口左边 0 像素 */
     width: 100%; /* 设置宽度为 100% */
-    background-color: #53565A; /* 背景颜色 */
-    color: #F4F5F0; /* 文本颜色 */
-    padding: 10px 0; /* 上下内边距 */
-    border-top: 1px solid #dee2e6; /* 顶部边框 */
-    text-align: center; /* 文本居中 */
 }
 
 /* 使用 @font-face 定义本地字体 */
