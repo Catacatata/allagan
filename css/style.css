@@ -47,23 +47,3 @@ footer {
     font-family: 'SmileySans', sans-serif; /* 使用自定义字体 */
 }
 
-.tab {
-    display: none;
-}
-.tab.active {
-    display: block;
-}
-.tabs {
-    display: flex;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-.tabs .btn {
-    margin-right: 10px;
-}
-.tabs .btn.active {
-    background-color: #337ab7;
-    border-color: #2e6da4;
-    color: white;
-}
-
