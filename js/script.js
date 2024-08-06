@@ -15,3 +15,46 @@ document.getElementById('vptest').addEventListener('click', function() {
     audio.play();
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            updateTable('tab1-table', data.tab1);
+            updateTable('tab2-table', data.tab2);
+        })
+        .catch(error => console.error('Error loading JSON:', error));
+
+    function updateTable(tableId, data) {
+        let tableBody = document.querySelector(`#${tableId} tbody`);
+        tableBody.innerHTML = ""; // 清空表格内容
+
+        data.forEach(item => {
+            let row = document.createElement('tr');
+
+            let nameCell = document.createElement('td');
+            nameCell.textContent = item.name;
+            row.appendChild(nameCell);
+
+            let ageCell = document.createElement('td');
+            ageCell.textContent = item.age;
+            row.appendChild(ageCell);
+
+            let emailCell = document.createElement('td');
+            emailCell.textContent = item.email;
+            row.appendChild(emailCell);
+
+            tableBody.appendChild(row);
+        });
+    }
+
+    document.querySelectorAll('.tabs .btn').forEach(tabButton => {
+        tabButton.addEventListener('click', function() {
+            document.querySelectorAll('.tabs .btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+
+            this.classList.add('active');
+            document.getElementById(this.id.replace('-button', '')).classList.add('active');
+        });
+    });
+});
+

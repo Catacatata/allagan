@@ -8,11 +8,10 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- 引入 Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">  
+	<link rel="stylesheet" href="css/style.css">
     <!-- 引入 Bootstrap JS -->
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>		
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -33,13 +32,54 @@
             </ul>
         </div>
     </nav>
-	
-	
-	
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>动态表格示例</h1>
+                <div class="tabs">
+                    <button id="tab1-button" class="btn btn-primary active">Tab 1</button>
+                    <button id="tab2-button" class="btn btn-default">Tab 2</button>
+                </div>
+                <div id="tab1" class="tab active">
+                    <table id="tab1-table" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 表格内容将动态插入 -->
+                        </tbody>
+                    </table>
+                </div>
+                <div id="tab2" class="tab">
+                    <table id="tab2-table" class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 表格内容将动态插入 -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <footer class="text-center">    
 		<p id="noharmed" class="text custom-font" style="cursor: pointer;">本语音包没有任何大妈受到伤害</p> 
 		<p class="text custom-font">&copy; 2024 dRama. 保留所有权利。</p>
-    </footer>   
+    </footer>
 	<script src="js/script.js"></script>	
 </body>
 </html>
